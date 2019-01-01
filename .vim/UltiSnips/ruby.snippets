@@ -1,0 +1,73 @@
+snippet def "basic function implementation"
+def ${1:function_name}${2:(${3:*args})}
+	${0}
+end
+endsnippet
+
+snippet cl "basic class implementation"
+class ${1:class_name}
+	${0}
+end
+endsnippet
+
+snippet Class "basic class implementation"
+Class.new do
+	def ${1:methos_name}
+		${0}
+	end
+end
+endsnippet
+
+snippet module "basica module implementation"
+module ${1:module_name}
+	${0}
+end
+endsnippet
+
+snippet defi "basic initialize"
+def initialize${1:(${2:*args})}
+	${0}
+end
+endsnippet
+
+snippet fe "for each snip"
+${VISUAL:ary}.each do |${1:elements}|
+	${0}
+end
+endsnippet
+
+snippet fei "for each snip"
+${VISUAL:ary}.each_with_index do |${1:element}, ${2:index}|
+${0}
+end
+endsnippet
+
+snippet set "basic setter"
+def ${1:name}=(${2:var})
+	@$1 = $2
+end
+endsnippet
+
+snippet get "basic getter"
+def ${1:name}
+	$1
+end
+endsnippet
+
+snippet reader "using att reader"
+attr_reader :${1:attribute}
+endsnippet
+
+snippet writer "using att writer"
+attr_writer :${1:attribute}
+endsnippet
+
+snippet acc "using accessor"
+attr_accessor :${1:attribute}
+endsnippet
+
+snippet case "case/when logic"
+case ${VISUAL}
+when ${1:name}
+end
+endsnippet
